@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Details</title>
+</head>
+<body>
+    <script>
+        const books = {
+            "Books": [
+                {
+                    "title": "The Great Gatsby",
+                    "author": "F. Scott Fitzgerald",
+                    "publicationYear": 1925,
+                    "genres": ["Fiction", "Classics"]
+                },
+                {
+                    "title": "To Kill a Mockingbird",
+                    "author": "Harper Lee",
+                    "publicationYear": 1960,
+                    "genres": ["Fiction", "Coming-of-Age"]
+                }
+            ]
+        };
+
+        console.log("Title of the first book:", books.Books[0].title);
+        console.log("Author of the second book:", books.Books[1].author);
+        books.Books.forEach(book => {
+            console.log(`Genres for "${book.title}": ${book.genres.join(", ")}`);
+        });
+    </script>
+</body>
+</html>
